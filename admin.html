@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar IA · Painel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="admin">
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span>
+    <div class="grid"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◆</span><span>Radar<b>IA</b> · Painel</span></div>
+    <div style="margin-left:auto"><a class="btn sm ghost" href="index.html" style="text-decoration:none">Abrir pesquisa ↗</a></div>
+  </header>
+
+  <main class="shell">
+    <div id="root"></div>
+  </main>
+
+  <input type="file" id="fileIn" accept=".json,.csv,.txt" multiple hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
